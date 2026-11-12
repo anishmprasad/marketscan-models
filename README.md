@@ -14,5 +14,6 @@ Scan AI is split in two because GitHub caps a release asset at 2 GB. Join with
 ## Updating a model
 
 Publish a new release (never replace files in an old one), then bump the release tag, file names and SHA-256
-values in `engine/src/main/kotlin/app/marketscan/engine/OnDevice.kt`. Installed apps keep the model they have
-until the user taps Update in Settings.
+values in `engine/src/main/kotlin/app/marketscan/engine/OnDevice.kt`. A phone or Mac that already has a model keeps
+it; the new file reaches people who download it after the app update (or who tap Remove, then Download, in
+Settings).
